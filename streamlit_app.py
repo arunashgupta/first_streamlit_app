@@ -39,6 +39,12 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # below code will bring the above data in a datafrima like a table output it the screen as a table?
 streamlit.dataframe(fruityvice_normalized)
 #removing line of raw json from the app
+# below code would display new code with header and choice of fruit in fruit_choice variable and its writtening the fruit-choce using write and then using get
+streamlit.header('Fruityvice Fruit Advice!')
+fruit_choice = streamlit.text_input('What fruit would you like information about?', 'kiwi')
+streamlit.write('The user entered', fruit-choice)
+import requests
+fruityvice_response = request.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 
 
