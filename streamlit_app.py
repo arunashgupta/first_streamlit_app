@@ -42,7 +42,7 @@ streamlit.dataframe(fruityvice_normalized)
 # below code would display new code with header and choice of fruit in fruit_choice variable and its writtening the fruit-choce using write and then using get
 streamlit.header('Fruityvice Fruit Advice!')
 fruit_choice = streamlit.text_input('What fruit would you like information about?', 'kiwi')
-streamlit.write('The user entered', fruit-choice)
+streamlit.write('The user entered', fruit_choice)
 import requests
 fruityvice_response = request.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
